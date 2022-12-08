@@ -24,6 +24,25 @@
       font-size: 64px;
     }
 
+    #btnSubmit {
+      width: 20%;
+    }
+
+    #footer .card {
+      --bs-border-color-translucent: none;
+      --bs-card-border-radius: none;
+      --bs-card-bg: none;
+    }
+
+    #footerImg {
+      margin: auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: url(./small.jpg) no-repeat center/cover;
+      /* object-fit: cover; */
+    }
+
     @media (min-width: 576px) {
       .navbar-expand-sm .offcanvas {
         flex-grow: 0;
@@ -192,32 +211,97 @@
         <h5>線上少年如有西部在我歌詞影響回到不得不交流下去，英語成本原。</h5>
       </div>
     </div>
-    <form class="text-start">
+    <form class="text-start mt-3">
       <div class="row">
         <div class="col-lg-6 mb-2">
           <label for="InputName" class="form-label">姓名</label>
           <input type="text" class="form-control" id="InputName">
         </div>
         <div class="col-lg-6 mb-2">
-          <label for="exampleInputPassword1" class="form-label">電話</label>
-          <input type="tel" class="form-control" id="exampleInputPassword1">
+          <label for="InputTel" class="form-label">電話</label>
+          <input type="tel" class="form-control" id="InputTel">
         </div>
       </div>
       <div class="row">
-        <div class="col-6">
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">電子信箱</label>
-            <input type="email" class="form-control" id="exampleInputPassword1">
-          </div>
+        <div class="col-lg-6 mb-2">
+          <label for="InputEmail" class="form-label">電子信箱</label>
+          <input type="email" class="form-control" id="InputEmail">
+        </div>
+        <div class="col-lg-6 mb-2">
+          <label for="InputQuestion" class="form-label">問題類型</label>
+          <select class="form-select" id="InputQuestion">
+            <option selected>餐飲建議</option>
+            <option value="1">服務態度</option>
+            <option value="2">我想打賞</option>
+            <option value="3">加入我們</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">意見專案</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
         </div>
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">訂閱泰山最新訊息</label>
       </div>
-
-      <button type="submit" class="btn btn-primary">送出</button>
+      <div class="row justify-content-center">
+        <button id="btnSubmit" type="submit" class="btn btn-secondary">送出</button>
+      </div>
     </form>
+  </div>
+  <div id="footer" class="container-fluid bg-dark text-white mt-3 pt-3 h-25">
+    <div class="row">
+      <div class="col-6 col-lg-3">
+        <div id="footerImg">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">
+              Address<br>
+              Lorem ipsum dolor sit.<br>
+              City,ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">
+              Link<br>
+              Lorem, ipsum dolor.<br>
+              Lorem, ipsum dolor.<br>
+              Lorem, ipsum dolor.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">
+              Contacts<br>
+              Lorem, ipsum dolor.<br>
+              Lorem, ipsum dolor.<br>
+              Lorem, ipsum dolor.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center">
+      <p>
+        © consectetur adipisicing elit. Possimus officia culpa similique qui repudiandae sunt
+        quam voluptate voluptatum
+      </p>
+    </div>
   </div>
   <script src="./JS/bootstrap.bundle.js"></script>
 </body>
