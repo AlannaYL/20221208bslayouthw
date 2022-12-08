@@ -43,12 +43,6 @@
       /* object-fit: cover; */
     }
 
-    @media (min-width: 576px) {
-      .navbar-expand-sm .offcanvas {
-        flex-grow: 0;
-      }
-    }
-
     @media (min-width: 992px) {
       .navbar {
         justify-content: space-between;
@@ -72,7 +66,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-Choice">
         <span class="navbar-toggler-icon text-light"></span>
       </button>
-      <div class="offcanvas offcanvas-start bg-dark" id="navbar-Choice">
+      <div class="offcanvas offcanvas-start bg-dark flex-grow-0" id="navbar-Choice">
         <div class="offcanvas-body">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
