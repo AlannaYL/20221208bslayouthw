@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.css">
+  <style>
+    .text-truncate-mutiple {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      display: -webkit-box-;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      文字截斷
+    </h1>
+    <p>對於較長的內容，可以添加 .text-truncate 類別，以透過刪節號截斷文字，須為 display: inline-block 或 display:block</p>
+    <h2>Block Level</h2>
+    <div class="row">
+      <div class="col-2 text-truncate">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In sapiente architecto facere. Quos, tenetur! Eaque
+        blanditiis, aperiam aspernatur dolor esse minus voluptate deleniti, dolorem totam praesentium modi adipisci quia
+        repudiandae!
+      </div>
+    </div>
+    <hr>
+    <h2>Inline Block Level</h2>
+    <div class="d-inline-block text-truncate" style="width: 500px;">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, deserunt ex. Minus esse est reprehenderit ut hic
+      harum, non et, provident nesciunt culpa vel error in illum! Sunt, iure perferendis.</div>
+
+    <hr>
+    <h2>多行文字截斷</h2>
+    <div class="text-truncate-mutiple" style="width: 300px;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quaerat nulla qui hic a deleniti distinctio?
+      Atque ducimus repudiandae quas perspiciatis debitis nemo est eius, dolores labore quaerat totam odit.
+    </div>
+  </div>
+  <script src="./JS/bootstrap.bundle.js"></script>
+</body>
+
+</html>
